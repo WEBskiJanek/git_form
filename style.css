@@ -1,0 +1,89 @@
+h1 {
+  color: blue;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px 30%;
+}
+
+form {
+  font-size: 1.25rem;
+  color: darkgray;
+  background-color: lightyellow;
+  overflow: hidden;
+}
+
+form label,
+form legend {
+  width: 30%;
+  float: left;
+}
+
+form input {
+  width: 60%;
+}
+
+form div {
+  overflow: hidden;
+  padding: 5px;
+  /* clear: both; */
+}
+
+form > div > fieldset {
+  border: 0;
+  padding: 10px;
+}
+
+form > div > fieldset > div > div > label {
+  font-size: 1rem;
+  color: black;
+}
+
+form textarea {
+  width: 100%;
+}
+
+form > div > fieldset > div > div > input {
+  width: 10%;
+  float: left;
+  margin-left: 0;
+}
+
+form > div > fieldset > div > div {
+  padding: 0;
+}
+
+.cities > div > input {
+  width: auto;
+  float: left;
+}
+
+form input:focus {
+  border: 3px solid darkred;
+}
+
+form input,
+textarea {
+  background-color: yellow;
+}
+
+#sendForm {
+  background-color: red;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 100px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+#sendForm:hover {
+  transition: background 0.8s linear 0.2s; color 0.8s ease 0.2s;
+  color: white;
+  background-color: black;
+}

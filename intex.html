@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Przykładowy Form1</h1>
+    <div class="form1">
+      <form>
+        <div>
+          <label class="description" id="title1" for="field1">
+            Podaj Nick:
+          </label>
+          <input type="text" name="field1" name="field1" />
+        </div>
+
+        <div>
+          <label class="description" id="title2" for="field2">
+            Podaj hasło:
+          </label>
+          <input
+            type="password"
+            name="field2"
+            name="field2"
+            title="Użyj minimum 8 znaków, minimum 1 znak duży i 1 znak mały"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="description" id="title3" for="field3">
+            Podaj email:
+          </label>
+          <input type="email" name="field3" name="field3" required />
+        </div>
+
+        <div>
+          <label class="description" id="age" for="age"
+            >Ile masz lat doświadczenia zawodowego?</label
+          >
+          <input type="number" size="3" name="age" min="2" max="10" value="5" />
+        </div>
+
+        <div>
+          <label class="description" id="title4" for="field4">
+            Opisz swój problem:
+          </label>
+
+          <div>
+            <textarea
+              name="field4"
+              id="field4"
+              cols="50"
+              rows="15"
+              spellcheck="true"
+            >
+            </textarea>
+          </div>
+        </div>
+
+        <div>
+          <fieldset>
+            <legend class="description" id="title5">
+              Wybierz ulubiony sport zimowy:
+            </legend>
+            <div>
+                <div> <input type="radio" id="title6_0" name="field6" value="default"
+                    checked=>
+                    <label class="choice" id="title6_0" for="field6_0">
+                      Nie interesuje się sportami zimowymi
+                    </label></div>
+            
+<div>  <input type="radio" id="title6_1" name="field6" value="skiing" />
+    <label class="choice" id="title6_1" for="field6_1">
+      Narciarstwo
+    </label></div>
+              
+<div><input
+    type="radio"
+    id="title6_2"
+    name="field6"
+    value="snowboard"
+  />
+  <label class="choice" id="title6_2" for="field6_2">
+    Snowboard
+  </label></div>
+            
+<div>
+              <input type="radio" id="title6_3" name="field6" value="skating" />
+              <label class="choice" id="title6_3" for="field6_3">
+                Łyżwiarstwó
+              </label>
+            </div>
+          </fieldset>
+        </div>
+    
+<!-- 
+        <div>
+          <label class="description" id="title8" for="field8"
+            >Ulubiony rodzaj muzyki:</label
+          >
+          <div>
+            <select name="music" id="music" required>
+              <option value="">Wybierz rodzaj muzyki</option>
+              <option value="Jazz">Jazz</option>
+              <option value="Rap">Rap</option>
+              <option value="Rock">Rock</option>
+              <option value="House">House</option>
+              <option value="Klasyczna">Klasyczna</option>
+            </select>
+          </div>
+        </div> -->
+
+        <div>
+          <fieldset>
+            <legend class="description" id="title7">
+              Któe miasta lubisz? (możesz wybrać więcej niż 1 odpowiedź)
+            </legend>
+
+            <div>
+                <div>
+              <input
+                type="checkbox"
+                id="checkbox_0"
+                name="field5"
+                value="warsaw"
+              />
+              <label class="choice" id="checkbox_0" for="checkbox_0"
+                >Warszawa</label
+              ></div>
+
+             <div>
+                  <input
+                type="checkbox"
+                id="checkbox_1"
+                name="field6"
+                value="poznan"
+              />
+              <label class="choice" id="checkbox_1" for="checkbox_1"
+                >Poznań</label
+              ></div>
+
+              <div>
+              <input
+                type="checkbox"
+                id="checkbox_2"
+                name="field7"
+                value="wroclaw"
+              />
+              <label class="choice" id="checkbox_2" for="checkbox_2"
+                >Wrocław</label
+              ></div>
+
+              <div>
+              <input
+                type="checkbox"
+                id="checkbox_3"
+                name="field8"
+                value="gdansk"
+              />
+              <label class="choice" id="checkbox_3" for="checkbox_3"
+                >Gdańsk</label
+              >  </div>
+            </div>
+          </fieldset>
+        </div>
+
+        
+        <div>
+            <label class="description" id="title8" for="field8"
+              >Ulubiony rodzaj muzyki:</label
+            >
+            <div>
+              <select name="music" id="music" required>
+                <option value="">Wybierz rodzaj muzyki</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Rap">Rap</option>
+                <option value="Rock">Rock</option>
+                <option value="House">House</option>
+                <option value="Klasyczna">Klasyczna</option>
+              </select>
+            </div>
+          </div>
+
+        <div>
+          <input
+            type="submit"
+            id="sendForm"
+            name="sendForm"
+            value="Prześlij formularz"
+          />
+        </div>
+    </div>
+      </form>
+    </div>
+  </body>
+</html>
